@@ -2,14 +2,17 @@
 public class TestaValores {
 
 	public static void main(String[] args) {
-		Conta conta = new Conta(1337, 24223);
 		
+		Conta conta1 = new Conta(1337, 24223, 200.0);
 		
-		//conta está inconsistente em relação à regra de negócio
-		conta.setAgencia(-50);
-		conta.setNumero(-350);
+		System.out.println(conta1.getSaldo());
 		
-		System.out.println(conta.getAgencia());
+		System.out.println(conta1.getAgencia());
+		
+			conta1.setAgencia(1232123);
+			
+		
+
 
 	}
 
